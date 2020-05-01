@@ -2,7 +2,7 @@
 #！name=香蕉
 
 [Script]
-http-response https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
+http-response https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/vod\/show\/|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
 [MITM]
 hostname = ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
@@ -30,7 +30,7 @@ if ($request.url.indexOf("/getGlobalData") != -1){
   obj.data.adgroups = "";
   obj.data.iOS_adgroups = "";
 }
-if ($request.url.indexOf("/vod/show") != -1){
+if ($request.url.indexOf("/vod/show/") != -1){
    obj.data.vodrow.isvip = "0";
    obj.data.vodrow.islimitv3 = "0";
 }
