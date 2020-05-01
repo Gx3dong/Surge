@@ -18,6 +18,7 @@ if ($request.url.indexOf("/ucp/index") != -1){
   obj.data.user.isvip = "1";
   obj.data.user.gicon = "V5";
   obj.data.user.gid = "5";
+  obj.data.user.gids = "ok";
   obj.data.user.duetime = "13:05:24"
   obj.data.user.dueday = "2039-05-274"
   obj.data.user.minup = "50";
