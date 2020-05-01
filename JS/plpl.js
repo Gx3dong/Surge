@@ -10,6 +10,6 @@ hostname = api.gao1gps.cn
 
 var obj = JSON.parse($response.body);
 obj.response.level = "1";
-obj.response.expiry = "1777594638"
+obj.response.expiry = "1777594638";
 
 $done({body: JSON.stringify(obj)});
