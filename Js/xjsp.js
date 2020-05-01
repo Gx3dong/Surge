@@ -24,7 +24,7 @@ if ($request.url.indexOf("/ucp/index") != -1){
   obj.data.user.minivod_play_daynum = "500";
   obj.data.user.minivod_down_daynum = "500";
 }
-if ($request.url.indexOf("/vod/show") != -1){
+if ($request.url.indexOf("/vod/reqplay") != -1){
   obj.data.retcode = "0";
 }
 if ($request.url.indexOf("/getGlobalData") != -1){
