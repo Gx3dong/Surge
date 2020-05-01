@@ -35,9 +35,5 @@ if ($request.url.indexOf("/vod/show/") != -1){
 }
 if ($request.url.indexOf("/reqplay/") != -1){
   obj.retcode = "0";
-  if(obj.data.hasOwnProperty("httpurl_preview")){
-  var playurl = obj.data["httpurl_preview"];
-  obj.data["httpurl"] = playurl;
-  };
 }
 $done({body: JSON.stringify(obj)});
