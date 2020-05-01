@@ -15,9 +15,10 @@ if ($request.url.indexOf("/ucp/index") != -1){
   obj.data.uinfo.minivod_play_daily_remainders = "666";
   obj.data.uinfo.minivod_down_daily_remainders = "666";
   obj.data.uinfo["next_upgrade_need"] = "0";
-  obj.data.user.isvip = "1";
+  obj.data.user.isvip = 1;
   obj.data.user.gicon = "V5";
   obj.data.user.gid = "5";
+  obj.data.user.islimitv3 = "5";
   obj.data.user.duetime = "13:05:24"
   obj.data.user.dueday = "2039-05-274"
   obj.data.user.minup = "50";
@@ -35,5 +36,9 @@ if ($request.url.indexOf("/vod/show/") != -1){
 }
 if ($request.url.indexOf("/reqplay/") != -1){
   obj.retcode = "0";
+   if(obj.data.hasOwnProperty("httpurl_preview")){
+  var playurl = obj.data["httpurl_preview"];
+  obj.data["httpurl"] = playurl;
+  };
 }
 $done({body: JSON.stringify(obj)});
