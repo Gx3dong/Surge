@@ -16,6 +16,14 @@ YouTube.js = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=h
 # > 人人视频 解锁AI原画 (by@george Jiang & R)
 rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
+# > 轻言相机
+http-response https:\/\/.*\.faceu\.mobi\/commerce\/v1\/subscription\/user_info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/qyxj.js
+
+# > 啪哩啪哩
+http-response https:\/\/.*\.(mister-zhou&gao1gps)\.cn\/v1\/user\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
+
+# > 香蕉视频
+http-response https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|vod\/show|.+\/reqplay\/) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, account.wps.*, *.googlevideo.com, api.rr.tv,
+hostname = %APPEND% api.m.jd.com, account.wps.*, *.googlevideo.com, api.rr.tv, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
