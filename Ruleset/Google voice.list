@@ -1,0 +1,4 @@
+# > Google Voice
+USER-AGENT,Voice*
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,voice.google.com
