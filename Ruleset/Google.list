@@ -7,6 +7,9 @@ DOMAIN-SUFFIX,google.com
 DOMAIN,dl.google.com
 DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,googletraveladservices.com
+DOMAIN,www.google-analytics.com
+DOMAIN,lh3.googleusercontent.com
+DOMAIN,googleads.g.doubleclick.net
 
 # > Google Cloud
 DOMAIN,cloud.google.com
