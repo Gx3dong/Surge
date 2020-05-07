@@ -1,0 +1,39 @@
+# > Google
+DOMAIN,www.google.com
+DOMAIN,www.google.cn
+DOMAIN,myaccount.google.com
+DOMAIN-SUFFIX,*.google.*
+DOMAIN-SUFFIX,google.com
+DOMAIN,dl.google.com
+DOMAIN,mtalk.google.com
+DOMAIN-SUFFIX,googletraveladservices.com
+
+# > Google Cloud
+DOMAIN,cloud.google.com
+
+# > Google Drive
+USER-AGENT,Google.Drive*
+USER-AGENT,com.google.Drive*
+USER-AGENT, %E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
+DOMAIN-SUFFIX,docs.google.com
+
+# > Google Voice
+USER-AGENT,Voice*
+DOMAIN-SUFFIX,*.google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,voice.google.com
+
+# > Gmail
+DOMAIN,pop.gmail.com
+DOMAIN,imap.gmail.com
+DOMAIN,smtp.gmail.com
+
+# > Outlook
+DOMAIN,outlook.office365.com
+DOMAIN,smtp.office365.com
+DOMAIN,imap-mail.outlook.com
+DOMAIN,smtp-mail.outlook.com
+
+# > Google Pay
+DOMAIN,pay.google.com
+DOMAIN-SUFFIX,google*.com
