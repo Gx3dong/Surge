@@ -2,9 +2,8 @@ user-agent, NeteaseMusic*, 🎸解锁网易云音乐
 user-agent, NeteaseMusic**, 🎸解锁网易云音乐
 user-agent, 网易云音乐*, 🎸解锁网易云音乐
 user-agent, 网易云音乐**, 🎸解锁网易云音乐
-user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*, 🎸解锁网易云音乐
+user-agent，%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*, 🎸解锁网易云音乐
 user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**, 🎸解锁网易云音乐
-
 host-suffix,music.163.com,🎸解锁网易云音乐
 host-suffix,interface.music.163.com,🎸解锁网易云音乐
 host-suffix,interface3.music.163.com,🎸解锁网易云音乐
