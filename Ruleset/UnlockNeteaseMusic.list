@@ -1,7 +1,7 @@
 #网易云解锁#
 #Domain规则
-DOMAIN-SUFFIX,163yun.com,Netease Music
-DOMAIN-SUFFIX,music.163.com,Netease Music
+DOMAIN-SUFFIX,163yun.com
+DOMAIN-SUFFIX,music.163.com
 DOMAIN-SUFFIX,music.126.net
 DOMAIN-SUFFIX,api.iplay.163.com
 DOMAIN-SUFFIX,apm.music.163.com
