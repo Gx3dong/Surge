@@ -1,15 +1,10 @@
-user-agent, NeteaseMusic*
-user-agent, NeteaseMusic**
-user-agent, 网易云音乐*
-user-agent, 网易云音乐**
-user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
-user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**
+USER-AGENT, NeteaseMusic*
+USER-AGENT, NeteaseMusic**
+USER-AGENT, 网易云音乐*
+USER-AGENT, 网易云音乐**
+USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
+USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**
 
-host-suffix,music.163.com
-host-suffix,interface.music.163.com
-host-suffix,interface3.music.163.com
-host-suffix,apm.music.163.com
-host-suffix,apm3.music.163.com
 IP-CIDR,59.111.181.38/32
 IP-CIDR,59.111.181.60/32
 IP-CIDR,223.252.199.66/32
