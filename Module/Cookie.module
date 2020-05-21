@@ -8,8 +8,6 @@
 # > 京东
 # 浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历
 JD_DailyBonus.js = max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex)
-# > 百度贴吧
-tieba.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js,type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?
 # > 爱奇艺
 iQIYI_GetCookie.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_GetCookie.js,type=http-request,pattern=https?:\/\/.*\.iqiyi\.com\/.*authcookie=
 # > 吾爱破解
@@ -27,11 +25,6 @@ bilibili.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/sc
 # > 腾讯视频
 # 手机浏览器访问并登录下https://film.qq.com/,随便选 1 部电影观看
 videoqq.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js,type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh
-# > 字幕组
-zimuzu.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js,type=http-request,pattern=^https?:\/\/(www\.)?rrys2019\.com\/?.?
-zimuzu.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js,type=http-request,pattern=^http:\/\/ios.zmzapi.com\/index.php.*a=(mobile_)?login
-# > 人人视频
-rrtv.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js,type=http-request,pattern=^https:\/\/api\.rr\.tv\/user\/profile
 # > CSDN
 csdn.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js,type=http-request,pattern=^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken
 csdn.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js,type=http-request,pattern=^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\?
@@ -43,4 +36,4 @@ Tengxunnews.js = script-path=https://raw.githubusercontent.com/nzw9314/Quantumul
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, music.163.com, *.iqiyi.com, www.52pojie.cn, *.bilibili.com, *.video.qq.com, h5.ele.me, *.m.163.com, ios.zmzapi.com, *.y.qq.com, *.csdn.net, mtrace.qq.com, i.meituan.com, node.kg.qq.com, tieba.baidu.com,
+hostname = %APPEND% api.m.jd.com, *.iqiyi.com, www.52pojie.cn, tieba.baidu.com, *.bilibili.com, music.163.com, *.video.qq.com, *.csdn.net, i.meituan.com, mtrace.qq.com
