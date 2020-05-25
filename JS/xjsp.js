@@ -2,10 +2,10 @@
 #！name=香蕉
 
 [Script]
-http-response https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/vod\/show\/|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
+http-response https?:\/\/.*\.lagoapps.com\.com\/(ucp\/index|getGlobalData|.+\/vod\/show\/|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
 [MITM]
-hostname = ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
+hostname = *.lagoapps.com
 */
 
 var obj = JSON.parse($response.body);
