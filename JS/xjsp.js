@@ -28,6 +28,11 @@ if ($request.url.indexOf("/getGlobalData") != -1){
   obj.data.adgroups = "";
   obj.data.iOS_adgroups = "";
 }
+if ($request.url.indexOf("/vod/show") != -1){
+  obj.date.vodrow.isvip = "0";
+  obj.date.vodrow.islimit = "0";
+  obj.date.vodrow.islimitv3 = "0";
+}
 if ($request.url.indexOf("/vod/reqplay/") != -1){
   obj.retcode = "0";
   if(obj.data.hasOwnProperty("httpurl_preview")){
