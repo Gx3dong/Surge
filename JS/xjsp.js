@@ -6,7 +6,7 @@ http-response https?:\/\/.*\.lagoapps\.com\/(ucp\/index|getGlobalData|.+\/vod\/s
 
 [MITM]
 hostname = *.lagoapps.com
-*/
+*/00
 
 var obj = JSON.parse($response.body);
 if ($request.url.indexOf("/ucp/index") != -1){
@@ -19,25 +19,19 @@ if ($request.url.indexOf("/ucp/index") != -1){
   obj.data.user.gicon = "V5";
   obj.data.user.gid = "5";
   obj.data.user.islimitv3 = "5";
-  obj.data.user.duetime = "13:05:24";
-  obj.data.user.dueday = "2039-05-27";
-  obj.data.user.minup = "50";
+  obj.data.user.duetime = "2026-06-06 23:59:59";
+  obj.data.user.dueday = "99天后过期";
 }
 if ($request.url.indexOf("/getGlobalData") != -1){
   obj.data.app_launch_times_adshow = "0";
   obj.data.adgroups = "";
   obj.data.iOS_adgroups = "";
 }
-if ($request.url.indexOf("/vod/show") != -1){
-  obj.date.vodrow.isvip = "0";
-  obj.date.vodrow.islimit = "0";
-  obj.date.vodrow.islimitv3 = "0";
-}
 if ($request.url.indexOf("/vod/reqplay/") != -1){
   obj.retcode = "0";
   if(obj.data.hasOwnProperty("httpurl_preview")){
-  var playurl = obj.data["httpurl_preview"];
-  obj.data["httpurl"] = playurl;
-  };
+    var playurl = obj.data["httpurl_preview"];
+    obj.data["httpurl"] = playurl;
+    };
 }
 $done({body: JSON.stringify(obj)});
