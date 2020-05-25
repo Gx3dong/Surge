@@ -25,10 +25,10 @@ http-response https:\/\/.*\.faceu\.mobi\/commerce\/v1\/subscription\/user_info r
 http-response https:\/\/.*\.gao1gps\.cn\/v1\/user\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
 
 # > 香蕉视频
-http-response https?:\/\/.*\.lagoapps.com\.com\/(ucp\/index|getGlobalData|.+\/vod\/show\/|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
+http-response https?:\/\/.*\.lagoapps\.com\/(ucp\/index|getGlobalData|.+\/vod\/show\/|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
 # > 小小影视
 http-response https:\/\/.*\.xxjjappss\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xxys.js
 
 [MITM]
-hostname = %APPEND%  api.m.jd.com, ios.prod.ftl.netflix.com, trade-acs.m.taobao.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.xiaoxiaoimg*.com
+hostname = %APPEND%  api.m.jd.com, ios.prod.ftl.netflix.com, trade-acs.m.taobao.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.lagoapps.com, *.xxjjappss.com
