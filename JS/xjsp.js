@@ -18,7 +18,7 @@ if ($request.url.indexOf("/ucp/index") != -1){
   obj.data.user.isvip = 1;
   obj.data.user.gicon = "V5";
   obj.data.user.gid = "5";
-  obj.data.user.duetime = "2026-06-06 23:59:59";
+  obj.data.user.duetime = new Date（'2066-06-06 12:12:12'）;
 }
 if ($request.url.indexOf("/getGlobalData") != -1){
   obj.data.app_launch_times_adshow = "0";
