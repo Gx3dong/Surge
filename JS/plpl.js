@@ -2,6 +2,9 @@
 #!name=啪哩啪哩unlock vip
 #!desc=下载：pali.cc
 
+QuanX：
+https:\/\/.*\.(mister-zhou&gao1gps)\.cn\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
+
 
 surge4:
 
