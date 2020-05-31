@@ -11,7 +11,7 @@ var obj = JSON.parse($response.body);
 if ($request.url.indexOf("/v4/shop/") != -1){
     obj.brushes.ownership = "free";
     obj.brushes.remark = "使用期限：永久";
-    obj.brushes.usageType = "unlimited"；
+    obj.brushes.usageType = "unlimited";
     obj.data.enable = "true";
 }
 if ($request.url.indexOf("/v4/users/me") != -1){
@@ -19,15 +19,15 @@ if ($request.url.indexOf("/v4/users/me") != -1){
 
 }
 if ($request.url.indexOf("/v4/shop/shelves") != -1){
-    obj.data.trial = "true"；
+    obj.data.trial = "true";
 }
 if ($request.url.indexOf("/v4/editor/template/recommended") != -1){
-    obj.enable = "true"；
-    obj.trial = "true"；
+    obj.enable = "true";
+    obj.trial = "true";
 }
 if ($request.url.indexOf("/v4/search/products") != -1){
-    obj.enable = "true"；
-    obj.trial = "true"；
+    obj.enable = "true";
+    obj.trial = "true";
 }
 
 $done({body: JSON.stringify(obj)});
