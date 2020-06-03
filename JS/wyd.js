@@ -1,11 +1,11 @@
 /*
+下载地址：https://zwydshop.qufaquan.cn
+
 [Script]
 http-response https:\/\/api\.jiuweiya\.com\/(zwyd\/user\/member|zwyd\/tools\/auth\/un_crack) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/wyd.js
 
-
 [MITM]
 hostname = api.jiuweiya.com
-
 */
 
 var obj = JSON.parse($response.body);
