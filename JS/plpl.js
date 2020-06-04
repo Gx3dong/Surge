@@ -3,13 +3,13 @@
 #!desc=下载：pali.cc
 
 QuanX：
-https:\/\/api\.gao1gps\.cn\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
+https:\/\/api\.gao1gps\.cn\/(v1\/user\/info|v1\/firstpurchase) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
 
 
 surge4:
 
 [Script]
-http-response https:\/\/api\.gao1gps\.cn\/v1\/user\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
+http-response https:\/\/api\.gao1gps\.cn\/(v1\/user\/info|v1\/firstpurchase) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
 
 [MITM]
 hostname = api.gao1gps.cn
@@ -20,5 +20,8 @@ if ($request.url.indexOf("/v1/user/info") != -1){
 obj.response.level = 1;
 obj.response.expiry = 1777594638;
 obj.response.show_time = 0;
+}
+if ($request.url.indexOf("/v1/firstpurchase") != -1){
+obj.response.show = false;
 }
 $done({body: JSON.stringify(obj)});
