@@ -22,15 +22,16 @@ if ($request.url.indexOf("/v4/shop/shelves") != -1){
     obj.data.trial = "true";
 }
 if ($request.url.indexOf("/v4/editor/template/recommended") != -1){
-    obj.masking = "true";
-    obj.colorful = "true";
+    var masking = document.querySelectorAll(masking);
+    var colorful = document.querySelectorAll(colorful);
+    masking = "true";
+    colorful = "true";
 }
 if ($request.url.indexOf("/v4/search/products") != -1){
-    obj.enable = "true";
-    obj.data.enable = "true";
-    obj.price.enable = "true";
-    obj.trial = "true";
-    obj.items.trial = "true";
+    var enable = document.querySelectorAll(enable);
+    var trial = document.querySelectorAll(trial);
+    enable = "true";
+    trial = "true";
 }
 
 $done({body: JSON.stringify(obj)});

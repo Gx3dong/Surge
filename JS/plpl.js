@@ -21,7 +21,4 @@ obj.response.level = 1;
 obj.response.expiry = 1777594638;
 obj.response.show_time = 0;
 }
-if ($request.url.indexOf("/v1/firstpurchase") != -1){
-obj.response.show = false;
-}
 $done({body: JSON.stringify(obj)});
