@@ -1,10 +1,10 @@
 /*黄油相机PRO
 
 [Script]
-http-response https?:\/\/.*\.bybuttey\.com\/(\/v4\/shop\/|\/v4\/users\/me|\/v4\/shop\/shelves|\/v4\/editor\/template\/recommended|\/v4\/search\/products) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
+http-response https?:\/\/.*\.bybutter\.com\/(v4\/shop\/|v4\/users\/me|v4\/shop\/shelves|v4\/editor\/template\/recommended|v4\/search\/products) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
 
 [MITM]
-hostname = *.bybuttey.com
+hostname = *.bybutter.com
 */ 
 
 var obj = JSON.parse($response.body);
