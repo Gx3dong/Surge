@@ -7,31 +7,32 @@ http-response https?:\/\/.*\.bybutter\.com\/(v4\/shop\/|v4\/users\/me|v4\/shop\/
 hostname = *.bybutter.com
 */ 
 
+
+
 var obj = JSON.parse($response.body);
 if ($request.url.indexOf("/v4/shop/") != -1){
-ownership.defineProperties(ownership, free);
-remark.defineProperties(remark, "使用期限：永久");
-usageType.defineProperties(usageType, unlimited);
-enable.defineProperties(enable, true);
+    obj.brushes.ownership = "free";
+    obj.brushes.remark = "使用期限：永久";
+    obj.brushes.usageType = "unlimited";
+    obj.data.enable = "true";
 }
 if ($request.url.indexOf("/v4/users/me") != -1){
     obj.memberships = [{"endAt":1682897677,"id":"1","name":"普通会员","ownership":"temporary","startAt":1588289677,"usageType":"unlimited"}];
 
 }
 if ($request.url.indexOf("/v4/shop/shelves") != -1){
-trial.defineProperties(trial, true);
+    obj.data.trial = "true";
 }
 if ($request.url.indexOf("/v4/editor/template/recommended") != -1){
-masking.defineProperties(masking, true);
-colorful.defineProperties(colorful, true);
-
+    obj.masking = "true";
+    obj.colorful = "true";
 }
 if ($request.url.indexOf("/v4/search/products") != -1){
-enable.defineProperties(enable, true);
-trial.defineProperties(trial, true);
+    obj.enable = "true";
+    obj.data.enable = "true";
+    obj.price.enable = "true";
+    obj.trial = "true";
+    obj.items.trial = "true";
 }
-if ($request.url.indexOf("/v4/template-square/") != -1){
-usageType.defineProperties(usageType, unlimited);
-ownership.defineProperties(ownership, free);
-}
+
 $done({body: JSON.stringify(obj)});
