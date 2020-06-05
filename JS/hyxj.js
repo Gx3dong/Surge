@@ -9,10 +9,10 @@ hostname = *.bybutter.com
 
 var obj = JSON.parse($response.body);
 if ($request.url.indexOf("/v4/shop/") != -1){
-    obj.brushes.ownership = "free";
-    obj.brushes.remark = "使用期限：永久";
-    obj.brushes.usageType = "unlimited";
-    obj.data.enable = "true";
+ownership.defineProperties(ownership, free);
+remark.defineProperties(remark, 使用期限：永久);
+usageType.defineProperties(usageType, unlimited);
+enable.defineProperties(enable, true);
 }
 if ($request.url.indexOf("/v4/users/me") != -1){
     obj.memberships = [{"endAt":1682897677,"id":"1","name":"普通会员","ownership":"temporary","startAt":1588289677,"usageType":"unlimited"}];
