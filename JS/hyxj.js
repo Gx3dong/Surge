@@ -8,31 +8,8 @@ hostname = *.bybutter.com
 */ 
 
 
+body = $response.body.replace(/\"ownership\":membership/g, "\"ownership\":free").replace(/\"enable\":false/g, "\"enable\":true").replace(/\"memberships\":\[\]/g, "\"memberships\":[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"temporary\",\"startAt\":1587425677,\"usageType\":\"unlimited\"}]").replace(/\"trial\":false/g, "\"trial\":true").replace(/\"colorful\":false/g, "\"colorful\":true").replace(/\"masking\":false/g, "\"masking\":true").replace(/"remark":"[^""]+"/g, '\"remark\":\"使用期限：永久"').replace(/\"ownership\":builtin/g, "\"ownership\":free").replace(/\"ownership\":promotion/g, "\"ownership\":free").replace(/\"usageType\":view/g, "\"usageType\":unlimited").replace(/\"ownership\":membership/g, "\"ownership\":free")
 
-var obj = JSON.parse($response.body);
-if ($request.url.indexOf("/v4/shop/") != -1){
-    obj.brushes.ownership = "free";
-    obj.brushes.remark = "使用期限：永久";
-    obj.brushes.usageType = "unlimited";
-    obj.data.enable = "true";
-}
-if ($request.url.indexOf("/v4/users/me") != -1){
-    obj.memberships = [{"endAt":1682897677,"id":"1","name":"普通会员","ownership":"temporary","startAt":1588289677,"usageType":"unlimited"}];
 
-}
-if ($request.url.indexOf("/v4/shop/shelves") != -1){
-    obj.data.trial = "true";
-}
-if ($request.url.indexOf("/v4/editor/template/recommended") != -1){
-    obj.masking = "true";
-    obj.colorful = "true";
-}
-if ($request.url.indexOf("/v4/search/products") != -1){
-    obj.enable = "true";
-    obj.data.enable = "true";
-    obj.price.enable = "true";
-    obj.trial = "true";
-    obj.items.trial = "true";
-}
 
-$done({body: JSON.stringify(obj)});
+$done({body});
