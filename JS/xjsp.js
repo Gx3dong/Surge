@@ -1,5 +1,5 @@
 /*
-#！name=香蕉
+香蕉
 
 [Script]
 http-response https?:\/\/.*\.lagoapps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/|\/comment\/listing\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js

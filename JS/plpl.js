@@ -1,9 +1,9 @@
 /*
-#!name=啪哩啪哩unlock vip
-#!desc=下载：pali.cc
+啪哩啪哩unlock vip
+下载：pali.cc
 
 QuanX：
-https:\/\/api\.gao1gps\.cn\/(v1\/user\/info|v1\/firstpurchase) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/plpl.js
+https:\/\/api\.gao1gps\.cn\/(v1\/user\/info|v1\/firstpurchase) url script-response-body plpl.js
 
 
 surge4:
