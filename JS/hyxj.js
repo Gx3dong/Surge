@@ -10,7 +10,7 @@ hostname = *.bybutter.com
 var obj = JSON.parse($response.body);
 if ($request.url.indexOf("/v4/shop/") != -1){
 ownership.defineProperties(ownership, free);
-remark.defineProperties(remark, 使用期限：永久);
+remark.defineProperties(remark, "使用期限：永久");
 usageType.defineProperties(usageType, unlimited);
 enable.defineProperties(enable, true);
 }
@@ -19,7 +19,7 @@ if ($request.url.indexOf("/v4/users/me") != -1){
 
 }
 if ($request.url.indexOf("/v4/shop/shelves") != -1){
-    obj.data.trial = "true";
+trial.defineProperties(trial, true);
 }
 if ($request.url.indexOf("/v4/editor/template/recommended") != -1){
 masking.defineProperties(masking, true);
