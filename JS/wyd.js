@@ -1,11 +1,11 @@
 /*
 下载地址：https://zwydshop.qufaquan.cn
 
-# > quanX:  js先下载到手机
+quanX:  js先下载到手机
 [rewrite_local]
 https:\/\/api\.jiuweiya\.com\/(zwyd\/user\/member|zwyd\/tools\/auth\/un_crack) url script-response-body wyd.js
 
-# > surge4:
+surge4:
 [Script]
 http-response https:\/\/api\.jiuweiya\.com\/(zwyd\/user\/member|zwyd\/tools\/auth\/un_crack) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/wyd.js
 
