@@ -11,7 +11,9 @@ hostname = *.faceu.mobi
 */
 
 var obj = JSON.parse($response.body);
+if ($request.url.indexOf("/commerce/v1/subscription/user_info") != -1){
     obj["data"]["flag"] = true;
     obj["data"]["start_time"] = 1588318697;
     obj["data"]["end_time"] = 3043035497;
+}
 $done({body: JSON.stringify(obj)});
