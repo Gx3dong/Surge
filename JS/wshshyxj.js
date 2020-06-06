@@ -10,7 +10,7 @@ http-response https:\/\/.*\.edujia.com\/\/user\/ws\/vip\/(query\/info.do|main\/q
 
 
 
-hostname = *.eduja.com
+hostname = *.edujia.com
 */
 
 
