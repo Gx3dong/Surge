@@ -12,7 +12,7 @@ hostname =*.faceu.mobi
 
 var obj = JSON.parse($response.body);
 
-obj.data.flag = true;
+obj.data.flag = "true";
 obj.data.start_time = 1588318697;
 obj.data.end_time = 3043035497;
 
