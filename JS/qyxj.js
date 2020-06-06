@@ -11,7 +11,7 @@ hostname = *.faceu.mobi
 */
 
 var obj = JSON.parse($response.body);
-    obj["flag"] = true;
-    obj["start_time"] = 1588318697;
-    obj["end_time"] = 3043035497;
+    obj["data"]["flag"] = true;
+    obj["data"]["start_time"] = 1588318697;
+    obj["data"]["end_time"] = 3043035497;
 $done({body: JSON.stringify(obj)});
