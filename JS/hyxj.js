@@ -9,7 +9,7 @@ hostname = %APPEND% *.bybutter.com
 */ 
 
 
-re('"ownership":\\w+@"memberships":\[\]@"usageType":\\w+','"ownership":free@[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"free\",\"startAt\":1587425677,\"usageType\":\"unlimited\"}]@"usageType":unlimited')
+re('"ownership":\w+@"memberships":\[\]@"usageType":\w+','"ownership":free@[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"free\",\"startAt\":1587425677,\"usageType\":\"unlimited\"}]@"usageType":unlimited')
 
 function re() {
  var body = $response.body;
