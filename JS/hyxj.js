@@ -9,7 +9,7 @@ hostname = %APPEND% *.bybutter.com
 */ 
 
 
-re('"ownership":\\w+@"enable":\\w+@"memberships":\[\]@"trial":\\w+@"masking":\\w+@"remark":"[^""]+"@"usageType":\\w+','"ownership":free@"enable":true@[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"free\",\"startAt\":1587425677,\"usageType\":\"unlimited\"}]@"trial":true@"colorful":true@"masking":true@"remark":"使用期限：永久"@"usageType":unlimited')
+rp('"ownership":\\w+@"memberships":\[\]@"remark":"[^""]+"@"usageType":\\w+@false','"ownership":free@[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"free\",\"startAt\":1587425677,\"usageType\":\"unlimited\"}]@"remark":"使用期限：永久"@"usageType":unlimited@true')
 
 function re() {
  var body = $response.body;
