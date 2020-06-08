@@ -1,5 +1,5 @@
-#!name=Remove Ads + unlock vip
-#!desc=该模块为脚本合集,用于Remove Ads + unlock vip. 需要配置 CA 证书并启用 MitM 开关.  您可以在使用后手动将本模块禁用，以免产生不必要的MITM.如果您是YouTube会员.请添加-*.googlevideo.com到hostname，否则无法加载视频.
+#!name=多功能模块
+#!desc=MultiFunction+UnlockVip
 #!system=ios
 
 [Script]
@@ -33,6 +33,8 @@ http-response https:\/\/user\.edujia.com\/\/(user\/ws\/vip\/query\/info.do|user\
 # > 歪点点
 http-response https:\/\/api\.jiuweiya\.com\/(zwyd\/user\/member|zwyd\/tools\/auth\/un_crack) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/wyd.js
 
+# > 黄油相机
+http-response https:\/\/api4\.bybutter\.com\/(v4\/users\/me|v4\/shop\/.*) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com
