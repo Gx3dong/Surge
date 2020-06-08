@@ -28,11 +28,6 @@ if ($request.url.indexOf(path1) != -1){
 }
 if ($request.url.indexOf(path2) != -1){
 	obj.retcode = "0";
-	obj.data.lastplayindex = "1";
-	if(obj.data.hasOwnProperty("httpurl_preview")){
-		var playurl = obj.data["httpurl_preview"];
-		obj.data["httpurl"] = playurl;
-	};
 }
 
 if ($request.url.indexOf(ad) != -1) {
