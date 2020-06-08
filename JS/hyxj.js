@@ -1,4 +1,10 @@
 /*
+黄油相机
+QX：脚本下载到script下面
+[rewrite_local]
+https:\/\/api4\.bybutter\.com\/(v4\/users\/me|v4\/shop\/.*) url script-response-body hyxj.js
+
+surge4:
 [Script]
 http-response https:\/\/api4\.bybutter\.com\/(v4\/users\/me|v4\/shop\/.*) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
 
