@@ -22,7 +22,7 @@ hostname = %APPEND% *.bybutter.com
 
 
 
-body = $response.body.replace(/\"ownership\":membership/g, "\"ownership\":free").replace(/\"memberships\":\[\]/g, "\"memberships\":[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"temporary\",\"startAt\":1587425677,\"usageType\":\"unlimited\"}]").replace(/"remark":"[^""]+"/g, '\"remark\":\"使用期限：永久"').replace(/\"ownership\":builtin/g, "\"ownership\":free").replace(/\"ownership\":promotion/g, "\"ownership\":free").replace(/\"usageType\":view/g, "\"usageType\":unlimited")
+body = $response.body.replace(/\"ownership\":\w+/g, "\"ownership\":free").replace(/\"usageType\":\w+/g, "\"usageType\":unlimited").replace(/\"memberships\":\[\]/g, "\"memberships\":[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"temporary\",\"startAt\":1587425677,\"usageType\":\"unlimited\"}]")
 
 
 
