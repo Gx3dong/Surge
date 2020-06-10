@@ -9,7 +9,7 @@ QX:先把js文件导入本地
 
 
 Surge4
-http-response,pattern=^https:\/\/api.shayujizhang.com\/account\/detail\/info\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
+http-response pattern=^https:\/\/api.shayujizhang.com\/account\/detail\/info\/ requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master
 */
 
 
