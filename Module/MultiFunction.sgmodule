@@ -37,7 +37,7 @@ http-response https:\/\/api\.jiuweiya\.com\/(zwyd\/user\/member|zwyd\/tools\/aut
 http-response https:\/\/api4\.bybutter\.com\/(v4\/users\/me|v4\/shop\/.*) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
 
 # > 鲨鱼记账
-http-response,pattern=^https:\/\/api.shayujizhang.com\/account\/detail\/info\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
+http-response pattern=^https:\/\/api.shayujizhang.com\/account\/detail\/info\/ requires-body=1,max-size=0 script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
 
 [MITM]
 hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api.shayujizhang.com
