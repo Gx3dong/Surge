@@ -13,6 +13,6 @@ http-response pattern=^https:\/\/api.shayujizhang.com\/account\/detail\/info\/ r
 */  
 
 
-body = $response.body.replace(/\"vip\":\{.*\s\}/g, '\"vip\":{\"status\":1,\"finish_date\":\"2021-07-10 16:28:58\",\"finish_date_ios\":\"2021.07.10\",\"pre_date\":\"2020-06-10 16:28:58\",\"days\":329,\"last_buy_date\":\"2020-06-10 16:28:58\",\"auto_buy\":0,\"buy_status\":1,\"id\": 901828,\"pre_status\":1}')
+body = $response.body.replace(/\"vip\": \{.*\s\}/g, '\"vip\": {\"status\":1,\"finish_date\":\"2021-07-10 16:28:58\",\"finish_date_ios\":\"2021.07.10\",\"pre_date\":\"2020-06-10 16:28:58\",\"days\":329,\"last_buy_date\":\"2020-06-10 16:28:58\",\"auto_buy\":0,\"buy_status\":1,\"id\": 901828,\"pre_status\":1}')
 
 $done({body});
