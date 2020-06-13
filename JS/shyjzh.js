@@ -1,5 +1,6 @@
 /*
-鲨鱼记账
+鲨鱼记账Vip破解
+>附带"真实的会员倒计时"
 
 hostname = api.shayujizhang.com
 
