@@ -17,7 +17,7 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-const expireTime = 1780675200000; // 到期时间2021.6.14
+const expireTime = 1780675200000; // 到期时间:2026-06-06 06:06:06
 var day = countDown();
 
 if ($request.url.indexOf("/account/detail/info") != -1){
