@@ -43,9 +43,15 @@ http-response https:\/\/api-cs.intsig.net\/purchase\/cs\/query_property\? requir
 # > 香蕉视频去广告
 http-response https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/|\/comment\/listing\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
+# > 鲨鱼记账<破解Vip附带”真实剩余天数”>
+http-response https:\/\/api\.shayujizhang\.com\/account\/detail\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
+
+
+
 [Header Rewrite]
 # > 香蕉视频会员
 https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com header-replace Cookie xxx_api_auth=3666393732366333343132363833646163623438313064646532653661393135
 
+
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com, api.shayujizhang.com
