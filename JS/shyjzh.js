@@ -4,10 +4,10 @@
 hostname = api.shayujizhang.com
 
 圈X：
-https:\/\/api\.shayujizhang\.com\/account\/detail\/info\/* url script-response-body shyjzh.js
+https:\/\/api\.shayujizhang\.com\/account\/detail\/info url script-response-body shyjzh.js
 
 Surge4:
-http-response https:\/\/api\.shayujizhang\.com\/account\/detail\/info\/* requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
+http-response https:\/\/api\.shayujizhang\.com\/account\/detail\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
 
 hostname = api.shayujizhang.com
 */
