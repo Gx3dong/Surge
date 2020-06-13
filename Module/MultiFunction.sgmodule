@@ -40,5 +40,12 @@ http-response https:\/\/api4\.bybutter\.com\/(v4\/users\/me|v4\/shop\/.*) requir
 
 http-response https:\/\/api-cs.intsig.net\/purchase\/cs\/query_property\? requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/CamScanner.js
 
+# > 香蕉视频去广告
+http-response https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/|\/comment\/listing\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
+
+[Header Rewrite]
+# > 香蕉视频会员
+https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com header-replace Cookie xxx_api_auth=3666393732366333343132363833646163623438313064646532653661393135
+
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com
