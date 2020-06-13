@@ -12,20 +12,26 @@ http-response https:\/\/api\.shayujizhang\.com\/account\/detail\/info\/* require
 hostname = api.shayujizhang.com
 */
 
+
 var obj = JSON.parse($response.body);
 const expireTime = 1780675200000; // 到期时间2021.6.14
+var day = countDown();
+
+
+if ($request.url.indexOf("/ucp/index") != -1){
 obj.data.vip = {
     "status": 1,
     "finish_date": "2026-06-06 06:06:06",
     "finish_date_ios": "2026.06.06",
     "pre_date": "2020-06-10 16:28:58",
-    "days": countDown(),
+    "days": day,
     "last_buy_date": "2020-06-11 03:17:09",
     "auto_buy": 0,
     "buy_status": 1,
     "id": 901828,
     "pre_status": 1
-  },
+  };
+};
   
   function countDown(time) {
       var nowTime = +new Date(); // 返回的是当前时间总的毫秒数
