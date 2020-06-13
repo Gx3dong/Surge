@@ -13,16 +13,26 @@ hostname = api.shayujizhang.com
 */
 
 var obj = JSON.parse($response.body);
+const expireTime = 1780675200000; // 到期时间2021.6.14
 obj.data.vip = {
     "status": 1,
-    "finish_date": "2021-02-05 16:28:58",
-    "finish_date_ios": "2021.02.05",
+    "finish_date": "2026-06-06 06:06:06",
+    "finish_date_ios": "2026.06.06",
     "pre_date": "2020-06-10 16:28:58",
-    "days": 236,
+    "days": countDown(),
     "last_buy_date": "2020-06-11 03:17:09",
     "auto_buy": 0,
     "buy_status": 1,
     "id": 901828,
     "pre_status": 1
   },
+  
+  function countDown(time) {
+      var nowTime = +new Date(); // 返回的是当前时间总的毫秒数
+
+      var times = (expireTime - nowTime) / 1000; // times是剩余时间总的秒数 
+      var d = parseInt(times / 60 / 60 / 24); // 天
+      return d;
+  }
+
 $done({body: JSON.stringify(obj)});
