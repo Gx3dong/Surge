@@ -10,11 +10,11 @@ hostname = *.lagoapps.com
 
 var obj = JSON.parse($response.body);
 if ($request.url.indexOf("/ucp/index") != -1){
-  obj.data.uinfo.down_daily_remainders = "999";
-  obj.data.uinfo.play_daily_remainders = "999";
-  obj.data.uinfo.minivod_play_daily_remainders = "999";
-  obj.data.uinfo.minivod_down_daily_remainders = "999";
-
+obj.data.uinfo.down_daily_remainders = "999";
+obj.data.uinfo.play_daily_remainders = "999";
+obj.data.uinfo.minivod_play_daily_remainders = "999";
+obj.data.uinfo.minivod_down_daily_remainders = "999";
+obj.data.user.mobi = "QQ群:1077223830";
 }
 if ($request.url.indexOf("/getGlobalData") != -1){
   delete obj.data.adgroups;
