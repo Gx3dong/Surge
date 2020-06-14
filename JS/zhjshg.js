@@ -15,8 +15,6 @@ hostname = integral.dasyibalang.com
 */
 
 
-var obj = JSON.parse($response.body);
-if ($request.url.indexOf("/User") != -1){
-obj.data.VIP = 1;
-}
+let obj = JSON.parse($response.body);
+obj = {"data":{"VIP": 1}};
 $done({body: JSON.stringify(obj)});
