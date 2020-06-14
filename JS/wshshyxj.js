@@ -20,7 +20,7 @@ var obj = JSON.parse($response.body);
 if ($request.url.indexOf("//user/ws/vip/query/info.do") != -1){
     obj.data.object.isVip = 1;
     obj.data.object.buyType = 3;
-    obj.data.object.expireTime = 3043035497;
+    obj.data.object.expireTime = "永久";
 }
 if ($request.url.indexOf("//user/ws/vip/main/query/info.do") != -1){
    obj.data.object.isVip = 1;
