@@ -1,8 +1,15 @@
 /*
 全能扫描王
 
-https:\/\/api-cs.intsig.net\/purchase\/cs\/query_property
 
+QuanX：
+https:\/\/api-cs.intsig.net\/purchase\/cs\/query_property url script-response-body CamScanner.js
+
+
+surge4:
+
+[Script]
+http-response https:\/\/api-cs.intsig.net\/purchase\/cs\/query_property requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/CamScanner.js
 
 hostname = api-cs.intsig.net
 */

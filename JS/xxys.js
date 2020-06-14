@@ -1,5 +1,6 @@
 /*
-XiaoXiaoYingShi unlock Vip
+小小影视 unlock Vip
+
 QX:（地址加这个）
 https:\/\/.*\.xxjjappss\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xxys.js
 
