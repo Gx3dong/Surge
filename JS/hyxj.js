@@ -1,8 +1,8 @@
 /*
 黄油相机
-QX：脚本下载到script下面
+QX1.0.10：
 [rewrite_local]
-https:\/\/api4\.bybutter\.com\/(v4\/users\/me|v4\/shop\/.*) url script-response-body hyxj.js
+https:\/\/api4\.bybutter\.com\/(v4\/users\/me|v4\/shop\/.*) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
 
 surge4:
 [Script]

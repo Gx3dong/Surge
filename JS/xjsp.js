@@ -13,7 +13,7 @@ QQ交流群：1077223830
 # > 会员
 https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com url request-header Cookie:.+ request-header Cookie: xxx_api_auth=3666393732366333343132363833646163623438313064646532653661393135
 # > 去广告
-https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/|\/comment\/listing\/) url script-response-body xjsp.js
+https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/|\/comment\/listing\/) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
 [MITM]
 hostname = *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com

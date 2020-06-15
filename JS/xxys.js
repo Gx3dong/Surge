@@ -1,14 +1,16 @@
 /*
 小小影视 unlock Vip
 
-QX:（地址加这个）
+QuanX1.0.10
+[rewrite_local]
 https:\/\/.*\.xxjjappss\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xxys.js
 
-Surge:
-http-response https:\/\/.*\.xxjjappss\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xxys.js
-这是通过NobyDa大佬的基础上修改好的，小小影视的脚本
 
-mitm加下面的
+Surge4:
+[Script]
+http-response https:\/\/.*\.xxjjappss\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xxys.js
+
+
 [MITM]
 hostname= *.xxjjappss.com
 

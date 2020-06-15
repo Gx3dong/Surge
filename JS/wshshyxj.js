@@ -1,15 +1,17 @@
 /*
 微商水印相机
-QX:
-https:\/\/user\.edujia.com\/\/user\/ws\/vip\/(query\/info.do|main\/query\/info.do) url script-response-body wshshyxj.js
+QuanX1.0.10:
+[rewrite_local]
+https:\/\/user\.edujia.com\/\/user\/ws\/vip\/(query\/info.do|main\/query\/info.do) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/wshshyxj.js
 
 
 Surge4:
+[Script]
 http-response https:\/\/user\.edujia.com\/\/user\/ws\/vip\/(query\/info.do|main\/query\/info.do) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/wshshyxj.js
 
 
 
-
+[MITM]
 hostname = user.edujia.com
 */
 
