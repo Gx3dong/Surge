@@ -5,12 +5,12 @@
 
 QuanX1.0.10：
 [rewrite_local]
-https:\/\/.*\.xunlei\.com\/xluser\.core\.login\/v3\/loginkey url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xuelei.js
+https:\/\/.*\.xunlei\.com\/xluser\.core\.login\/v3\/loginkey url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
 
 surge4:
 
 [Script]
-http-response https:\/\/.*\.xunlei\.com\/xluser\.core\.login\/v3\/loginkey requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xuelei.js
+http-response https:\/\/.*\.xunlei\.com\/xluser\.core\.login\/v3\/loginkey requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
 
 [MITM]
 hostname = *.xunlei.com
