@@ -54,5 +54,5 @@ obj = {
     "vipGrow": "4105",
     "vipLevel": "4"
   }]
-}
+};
 $done({body: JSON.stringify(obj)});
