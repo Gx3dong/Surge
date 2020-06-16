@@ -17,7 +17,6 @@ hostname = *.xunlei.com
 */
 
 var obj = JSON.parse($response.body);
-if ($request.url.indexOf("/xluser.core.login/v3/loginkey") != -1){
 obj = {
   "account": "701",
   "error": "success",
@@ -55,6 +54,5 @@ obj = {
     "vipGrow": "4105",
     "vipLevel": "4"
   }]
-}
 }
 $done({body: JSON.stringify(obj)});
