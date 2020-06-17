@@ -1,6 +1,10 @@
 /*
 app:我的壁纸库
 基于app版本2.12.1
+
+>Gx3dong制作,免费资源群:1077223830.进群不迷路.
+>木木团队,欢迎关注公众号:十三座州府
+
 QuanX1.0.10:
 [rewrite_local]
 https:\/\/.*\.platforms\.team\/apple\/verifyTransaction url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/wdbzk.js

@@ -2,6 +2,9 @@
 鲨鱼记账Vip破解
 >附带"真实的会员倒计时"
 
+>Gx3dong制作,免费资源群:1077223830.进群不迷路.
+>木木团队,欢迎关注公众号:十三座州府
+
 hostname = api.shayujizhang.com
 
 QuanX1.0.10：

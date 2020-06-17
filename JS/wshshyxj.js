@@ -1,5 +1,9 @@
 /*
 微商水印相机
+
+>Gx3dong制作,免费资源群:1077223830.进群不迷路.
+>木木团队,欢迎关注公众号:十三座州府
+
 QuanX1.0.10:
 [rewrite_local]
 https:\/\/user\.edujia.com\/\/user\/ws\/vip\/(query\/info.do|main\/query\/info.do) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/wshshyxj.js
