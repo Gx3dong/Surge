@@ -1,6 +1,7 @@
 /*
 迅雷VIP
 注：使用前请先登陆一个账号
+   如果越狱手机请屏蔽迅雷检测越狱
 下载：微信关注公众号（蕾妹帮帮忙）或者https://ithunder-ota.a.88cdn.com/download-guide/step1.html?from=gzhlm
 
 QuanX1.0.10：
