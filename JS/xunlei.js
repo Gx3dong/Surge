@@ -1,21 +1,23 @@
 /*
 迅雷VIP
 
->Gx3dong制作,免费资源群:1077223830.进群不迷路.>木木团队,欢迎关注公众号:十三座州府
+>Gx3dong制作,免费资源群:1077223830.进群不迷路.
+>木木团队,欢迎关注公众号:十三座州府
 
 下载：微信关注公众号（蕾妹帮帮忙）或者https://ithunder-ota.a.88cdn.com/download-guide/step1.html?from=gzhlm
 
 注：使用前请先登陆一个账号
    如果越狱手机请屏蔽迅雷检测越狱
+   如果加速失败可以尝试旧版迅雷5.32
    
 QuanX1.0.10：
 [rewrite_local]
-https:\/\/.*\.xunlei\.com\/xluser\.core\.login\/v3\/loginkey url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
+https:\/\/.*\.xunlei\.com\/(xluser\.core\.login\/v3\/loginkey|loginkey) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
 
 surge4:
 
 [Script]
-http-response https:\/\/.*\.xunlei\.com\/xluser\.core\.login\/v3\/loginkey requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
+http-response https:\/\/.*\.xunlei\.com\/(xluser\.core\.login\/v3\/loginkey|loginkey) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
 
 [MITM]
 hostname = *.xunlei.com
