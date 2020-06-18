@@ -2,8 +2,12 @@
 #!desc=MultiFunction+UnlockVip
 #!system=ios
 
-[Script]
+[Header Rewrite]
+# > 香蕉视频会员
+https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com header-replace Cookie xxx_api_auth=3666393732366333343132363833646163623438313064646532653661393135
 
+
+[Script]
 # > 京东比价
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
@@ -46,12 +50,9 @@ http-response https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|ge
 # > 鲨鱼记账<破解Vip附带”真实剩余天数”>
 http-response https:\/\/api\.shayujizhang\.com\/account\/detail\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
 
-
-
-[Header Rewrite]
-# > 香蕉视频会员
-https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com header-replace Cookie xxx_api_auth=3666393732366333343132363833646163623438313064646532653661393135
+# > 人人视频(开启原画)版本4.4.1之前
+http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/rrtv.js
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com, api.shayujizhang.com
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com, api.shayujizhang.com, api.rr.tv
