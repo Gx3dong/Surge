@@ -1,6 +1,5 @@
 /*
-app:我的壁纸库
-基于app版本2.12.1
+APP:我的壁纸库
 
 >Gx3dong制作,免费资源群:1077223830.进群不迷路.
 >木木团队,欢迎关注公众号:十三座州府
@@ -16,37 +15,10 @@ http-response https:\/\/.*\.platforms\.team\/apple\/verifyTransaction requires-b
 
 [MITM]
 hostname = *.platforms.team
-
 */
-var obj = JSON.parse($response.body);
 
-
-obj.data = {
-    "is_valid":true,
-    "may_expire":false,
-    "is_offer_eligible":true,
-    "in_app":{
-        "com.apalonapps.wallpaperspys.7d_3dt_SUB00010":{
-            "is_valid":true,
-            "cancelled":false,
-            "may_expire":true,
-            "is_trial":true,
-            "is_intro":false,
-            "transaction_id":"550000539399999",
-            "cancel_reason":"user",
-            "purchase_date_ms":"1577961210000",
-            "expired":false,
-            "expires_date_ms":"4070890131000",
-            "remaining_time_ms":"2247793000"
-        }
-    },
-    "consumable_inapp":[],
-    "hash":"5773ec1ddfbdf45fc1d00e1fcbch5hg6"
-};
-
-
-
-$done({body: JSON.stringify(obj)});
+body = $response.body.replace(/\"com\.apalonapps\.wallpaperspys\.7d\_3dt\_SUB00010\":\{[^€]*\}\}/g, '\"com\.apalonapps\.wallpaperspys\.7d\_3dt\_SUB00010\":\{\"is_valid\":true,\"cancelled\":false,\"may_expire\":true,\"is_trial\":true,\"is_intro\":false,\"transaction_id\":\"250000681084079\",\"cancel_reason\":\"user\",\"purchase_date_ms\":\"1692068928000\",\"expired\":true,\"expires_date_ms\":\"1692328128000\",\"remaining_time_ms\":\"171750000\"\}\},\"consumable_inapp\":\[\],\"hash\":\"8ab353252a9532dde08abeea69bc6b30\"\}\}')
+$done({body});
 
 
 
