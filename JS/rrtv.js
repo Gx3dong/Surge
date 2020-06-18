@@ -74,7 +74,7 @@ if (url.indexOf('/ad/getAll') != -1) {
 		"icon": "kanjuwuguanggao"
 	}];
 
-}else (url.indexOf('/rrtv-video/v4plus/season/detail') != -1){
+}else if (url.indexOf('/rrtv-video/v4plus/season/detail') != -1){
 	var obj = JSON.parse(body);
 
 	obj.data['season']['feeMode'] = 'restriction';
