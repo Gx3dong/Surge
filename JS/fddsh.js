@@ -21,13 +21,14 @@ hostname = *.dushu.io
 
 */
 
-let Vip = $request.body.replace(/\"token\":\"[^"]*\"/g, '\"token\":\"20200601MAomDKKlaUEALAHWGaE\"');
+let body = $request.body.replace(/\"token\":\"[^"]*\"/g, '\"token\":\"20200601MAomDKKlaUEALAHWGaE\"');
 let url = $request.url;
-let obj = JSON.parse($response.body);
 if (url.indexOf("/userInfo") != -1) {
+let body = $response.body;
+let obj = JSON.parse(body);
 obj.username = Gx3dong;
 obj.avatarUrl = "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL3xC3su7xUBWxfcZAtvJVqt6a6XN6SfN8e90HcVa6Z67mKmhdib71ad8Gw8tcQf1QwnV41KRCAocA/132";
 
-body = JSON.stringify(obj)
+body = JSON.stringify(obj);
 }
 $done({body});
