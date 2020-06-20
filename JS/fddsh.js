@@ -8,13 +8,13 @@ QQ交流群:1077223830
 QuanX1.0.10：
 [rewrite_local]
 https:\/\/.*\.dushu\.io\/* url script-request-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/fddsh.js
-https:\/\/.*\.dushu\.io\/* url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/fddsh.js
+https:\/\/.*\.dushu\.io\/uesrInfo url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/fddsh.js
 
 surge4:
 
 [Script]
 http-request https:\/\/.*\.dushu\.io\/* requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/fddsh.js
-http-response https:\/\/.*\.dushu\.io\/* requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/fddsh.js
+http-response https:\/\/.*\.dushu\.io\/uesrInfo requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/fddsh.js
 
 [MITM]
 hostname = *.dushu.io
