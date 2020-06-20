@@ -8,7 +8,7 @@ QX1.0.10：
 [rewrite_local]
 https:\/\/api4\.bybutter\.com\/v4\/* url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
 
-surge4:
+Surge4:
 [Script]
 http-response https:\/\/api4\.bybutter\.com\/v4\/* requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
 

@@ -14,7 +14,7 @@ QuanX1.0.10：
 [rewrite_local]
 https:\/\/.*\.xunlei\.com\/(xluser\.core\.login\/v3\/loginkey|loginkey) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
 
-surge4:
+Surge4:
 
 [Script]
 http-response https:\/\/.*\.xunlei\.com\/(xluser\.core\.login\/v3\/loginkey|loginkey) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xunlei.js
