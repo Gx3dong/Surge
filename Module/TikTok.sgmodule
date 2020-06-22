@@ -1,9 +1,0 @@
-#!name=TikTok
-#!desc=TikTok解除限制
-
-[URL Rewrite]
-CN $1KR 302
-(?<=\?version_code=)16.. $11 302
-
-[MITM]
-hostname = %APPEND% *.tiktokv.com,*.musical.ly
