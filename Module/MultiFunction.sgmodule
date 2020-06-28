@@ -53,6 +53,9 @@ http-response https:\/\/api\.shayujizhang\.com\/account\/detail\/info requires-b
 # > 人人视频(开启原画)版本4.4.1之前
 http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/rrtv.js
 
+# > 黄瓜视频会员和破解付费
+http-response https:\/\/.*\.awk2\.work\/(user/info|mov\/browse2) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgshp.js
+
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com, api.shayujizhang.com, api.rr.tv
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com, api.shayujizhang.com, api.rr.tv, *.awk2.work
