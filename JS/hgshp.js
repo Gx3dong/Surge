@@ -35,15 +35,76 @@ const expireTime = 1780675200000; // 到期时间:2026-06-06 06:06:06
 var day = countDown();
 
 if ($request.url.indexOf("/user/info") != -1){
-obj.data.inviteCnt = 1;
-obj.data.myInviteCode = "CEN76X";
-obj.data.vipEndDate = "2026-06-06";
-obj.data.aliasName = "Gx3dong";
-obj.data.ExpiredDays = parseInt(day);
-obj.data.isPaid = 1;
-obj.data.phone = "1077223830";
-obj.data.userId = 16825738;
-obj.data.vipLogo = 4;
+obj= {
+  "code": 0,
+  "data": [{
+    "readLevel": 0,
+    "haveExtendInfo": 0,
+    "firstRechargeTime": "2020-06-26",
+    "subchannelCode": "official000",
+    "gameLink": "",
+    "todayDownNum": 0,
+    "extrViewNumber": 0,
+    "appCode": "002101",
+    "dailyViewNum": 10,
+    "myInviteCode": "CEN76X",
+    "inviteCnt": 1,
+    "nextLevelNeed": 0,
+    "leftViewNum": 10,
+    "vipExpiredDate": "",
+    "potato_url": "https://lynnconway.me/hgav30",
+    "state": 1,
+    "certSignStatus": 0,
+    "vipEndDate": "2026-06-06",
+    "hasCompleteInfo": 0,
+    "aliasName": "Gx3dong",
+    "ExpiredDays": 735,
+    "level": 0,
+    "totalBalance": 0,
+    "appVer": "0",
+    "limitDownNum": 0,
+    "birth": "",
+    "isPaid": 1,
+    "isMaxLevel": 0,
+    "oldDriver": 0,
+    "phone": "QQ群:1077223830",
+    "name": null,
+    "job": "",
+    "nextLevelNum": 0,
+    "preferenceCustom": "",
+    "gender": 1,
+    "hasJoinPotatoGroup": 0,
+    "supUserId": 0,
+    "companion": null,
+    "maxInviteCnt": null,
+    "userBrowCnt": 0,
+    "tagIds": "",
+    "icon": "/icon/7.jpg",
+    "title": "",
+    "pkg": "cuke0001",
+    "userCode": null,
+    "tagNames": "",
+    "countryCode": "+86",
+    "hasDownloadApplication": 0,
+    "channelCode": "01",
+    "gameId": "",
+    "oriAppVer": "118",
+    "userCls": 2,
+    "exceedPercent": 0,
+    "gmtCreate": "2019-04-30",
+    "downloadApplication": 0,
+    "userId": 16825738,
+    "vipLogo": 4,
+    "joinPotatogroup": 0,
+    "appid": "",
+    "vcoinLeft": 0,
+    "isExpired": 1,
+    "hasSign": false
+  }],
+  "enumCode": "SUCCESS",
+  "msg": "1",
+  "success": true
+};
 body = JSON.stringify(obj);
 };
 if ($request.url.indexOf("/mov/browse2") != -1){
