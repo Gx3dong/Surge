@@ -58,7 +58,7 @@ obj = {
     "vipEndDate": "2026-06-06",
     "hasCompleteInfo": 0,
     "aliasName": "Gx3dong",
-    "ExpiredDays": 735,
+    "ExpiredDays": parseInt(day),
     "level": 0,
     "totalBalance": 0,
     "appVer": "0",
