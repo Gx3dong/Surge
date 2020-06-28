@@ -35,21 +35,21 @@ const expireTime = 1780675200000; // 到期时间:2026-06-06 06:06:06
 var day = countDown();
 
 if ($request.url.indexOf("/user/info") != -1){
-  obj.data.inviteCnt = 1;
-  obj.data.myInviteCode = "CEN76X";
-  obj.data.vipEndDate = "2026-06-06";
-  obj.data.aliasName = "Gx3dong";
-  obj.data.ExpiredDays = parseInt(day);
-  obj.data.isPaid = 1;
-  obj.data.phone = "QQ群:1077223830";
-  obj.data.userId = 16825738;
-  obj.data.vipLogo = 4;
-  body = JSON.stringify(obj);
+obj.data.inviteCnt = 1;
+obj.data.myInviteCode = "CEN76X";
+obj.data.vipEndDate = "2026-06-06";
+obj.data.aliasName = "Gx3dong";
+obj.data.ExpiredDays = parseInt(day);
+obj.data.isPaid = 1;
+obj.data.phone = "1077223830";
+obj.data.userId = 16825738;
+obj.data.vipLogo = 4;
+body = JSON.stringify(obj);
 };
 if ($request.url.indexOf("/mov/browse2") != -1){
-  obj.data.hasBuy = true;
-  obj.msg = 1;
-  body = JSON.stringify(obj);
+obj.data.hasBuy = true;
+obj.msg = 1;
+body = JSON.stringify(obj);
 };
 
   function countDown(time) {
