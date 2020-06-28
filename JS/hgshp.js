@@ -35,7 +35,9 @@ const expireTime = 1780675200000; // 到期时间:2026-06-06 06:06:06
 var day = countDown();
 
 if ($request.url.indexOf("/user/info") != -1){
-obj.data = [{
+obj = {
+  "code": 0,
+  "data": [{
     "readLevel": 0,
     "haveExtendInfo": 0,
     "firstRechargeTime": "2020-06-26",
@@ -56,7 +58,7 @@ obj.data = [{
     "vipEndDate": "2026-06-06",
     "hasCompleteInfo": 0,
     "aliasName": "Gx3dong",
-    "ExpiredDays": parseInt(day),
+    "ExpiredDays": 735,
     "level": 0,
     "totalBalance": 0,
     "appVer": "0",
@@ -98,7 +100,11 @@ obj.data = [{
     "vcoinLeft": 0,
     "isExpired": 1,
     "hasSign": false
-  }];
+  }],
+  "enumCode": "SUCCESS",
+  "msg": "1",
+  "success": true
+};
 body = JSON.stringify(obj);
 };
 if ($request.url.indexOf("/mov/browse2") != -1){
