@@ -104,13 +104,11 @@ obj= {
   "enumCode": "SUCCESS",
   "msg": "1",
   "success": true
-};
-body = JSON.stringify(obj);
+}
 };
 if ($request.url.indexOf("/mov/browse2") != -1){
 obj.data.hasBuy = true;
 obj.msg = 1;
-body = JSON.stringify(obj);
 };
 
   function countDown(time) {
@@ -120,5 +118,5 @@ body = JSON.stringify(obj);
       var d = parseInt(times / 60 / 60 / 24); // 天
       return d;
   };
-
+body = JSON.stringify(obj);
 $done({body});
