@@ -39,4 +39,4 @@ delete obj.data.adgroups;
 delete obj.data.iOS_adgroups;
 obj.data.app_launch_times_adshow =0;
 }
-$done({body: JSON.stringify(obj)});
+	$done({body: JSON.stringify(obj)});
