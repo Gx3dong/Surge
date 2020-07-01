@@ -15,10 +15,6 @@ http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness
 http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
-# > 奈飞评分
-nf_rating.js = script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-nf_rating.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-
 # > WPS (By eHpo1)
 Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
 
@@ -58,4 +54,4 @@ http-response https:\/\/.*\.awk2\.work\/mov\/browse2 requires-body=1,max-size=0,
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, ios.prod.ftl.netflix.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com, api.shayujizhang.com, api.rr.tv, *.awk2.work
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com, api.shayujizhang.com, api.rr.tv, *.awk2.work
