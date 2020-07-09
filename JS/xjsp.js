@@ -14,7 +14,7 @@ QQ交流群：1077223830
 
 [rewrite_local]
 # > 会员
-https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com url request-header Cookie:.+ request-header Cookie: xxx_api_auth=3433346533343130636136363935363132383864623761323737363464376233
+https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com url request-header Cookie:.+ request-header Cookie: xxx_api_auth=3434386462333835323733393339623165323633336532353933373439303464
 # > 去广告
 https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
@@ -25,7 +25,7 @@ Surge4:
 直接复制下面内容新建本地模块
 
 [Header Rewrite]
-https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com header-replace Cookie xxx_api_auth=3433346533343130636136363935363132383864623761323737363464376233
+https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com header-replace Cookie xxx_api_auth=3434386462333835323733393339623165323633336532353933373439303464
 
 [Script]
 http-response https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
