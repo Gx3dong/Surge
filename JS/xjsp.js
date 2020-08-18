@@ -25,13 +25,13 @@ Surge4:
 直接复制下面内容新建本地模块
 
 [Header Rewrite]
-https:\/\/.*\.(lagoapps|guoguoapps|pipiapps).com header-replace Cookie xxx_api_auth=3731653137633361383863653938346662393462333535383638663231346362
+https:\/\/.*\.xiangxiangapps\.com header-replace Cookie xxx_api_auth=3731653137633361383863653938346662393462333535383638663231346362
 
 [Script]
-http-response https?:\/\/.*\.(lagoapps|guoguoapps|pipiapps)\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
+http-response https?:\/\/.*\.xiangxiangapps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
 [MITM]
-hostname = %APPEND% *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com
+hostname = %APPEND% *.xiangxiangapps.com
 
 */
 
