@@ -13,7 +13,7 @@ Surge4:
 http-response https:\/\/.*\.snssdk\.com\/reading\/user\/info\/v:version\/ requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/fqxs.js
 
 [MITM]
-hostname = %APPEND% .*\.snssdk\.com
+hostname = %APPEND% *.snssdk.com
 */
 
 var obj = JSON.parse($response.body);
