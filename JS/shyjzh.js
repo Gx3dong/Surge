@@ -28,7 +28,7 @@ var obj = JSON.parse(body);
 const expireTime = 1780675200000; // 到期时间:2026-06-06 06:06:06
 var day = countDown();
 
-if ($request.url.indexOf("/account/detail/info") != -1){
+if ($request.url.indexOf("/account/grant/detail/info/") != -1){
 obj.data.vip = {
     "status": 1,
     "finish_date": "2026-06-06 06:06:06",
