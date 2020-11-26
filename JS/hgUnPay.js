@@ -11,19 +11,19 @@ QQ交流群：1077223830
 圈X：
 
 [rewrite_local]
-https:\/\/.*\.awk2\.work\/mov\/browse2 url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
+https:\/\/api1000\.gdqeb\.club\/mov\/browse2 url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
 
 [MITM]
-hostname = *.awk2.work
+hostname = api1000.gdqeb.club
 
 Surge4:
 直接复制下面内容新建本地模块
 
 [Script]
-http-response https:\/\/.*\.awk2\.work\/mov\/browse2 requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
+http-response https:\/\/api1000\.gdqeb\.club\/mov\/browse2 requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
 
 [MITM]
-hostname = *.awk2.work
+hostname = api1000.gdqeb.club
 
 */
 
