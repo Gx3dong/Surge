@@ -4,7 +4,7 @@ APP:黄瓜视频破解会员和付费
 >Gx3dong制作,免费资源群:1077223830.进群不迷路.
 >木木团队,欢迎关注公众号:十三座州府
 
-下载地址:https://jsyijiayi.com/hpj7863.html?pkg=cuke0001&accountCode=666&inviteCode=CEN76X
+下载地址:https://647nhjt.ye6nwi.space/djt0814.html?pkg=cuke0001&accountCode=666&inviteCode=CEN76X
 
 QQ交流群：1077223830
 
