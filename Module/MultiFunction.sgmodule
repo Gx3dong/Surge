@@ -50,8 +50,8 @@ http-response https:\/\/api\.shayujizhang\.com\/account\/grant\/detail\/info req
 http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/rrtv.js
 
 # > 黄瓜破解付费
-http-response https:\/\/api1000\.cvxia\.com\/mov\/browse2 requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
+http-response https:\/\/api1000\.gdqeb\.com\/mov\/browse2 requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.*apps.com, api.shayujizhang.com, api.rr.tv, api1000.cvxia.com
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, account.wps.*, *.faceu.mobi, *.gao1gps.cn, *.mister-zhou.cn, *.xxjjappss.com, user.edujia.com, api.jiuweiya.com, api4.bybutter.com, api-cs.intsig.net, *.*apps.com, api.shayujizhang.com, api.rr.tv, api1000.gdqeb.com
