@@ -3,10 +3,10 @@ Keep app unlock private lessons and action libraries.
 There is a bug in the QX app. This script may not work, but the surge does not have this problem.
 
 QX1.0.0:
-^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
+^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/keep.js
 
 Surge4.0:
-http-response https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
+http-response https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/keep.js
 
 MITM = api.gotokeep.com
 */
