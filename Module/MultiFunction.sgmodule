@@ -23,6 +23,9 @@ http-response https:\/\/api\.shayujizhang\.com\/account\/grant\/detail\/info req
 # > 黄瓜破解付费
 http-response https:\/\/api1000\.gdqeb\.club\/mov\/browse2 requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
 
+# > keep
+http-response https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/keep.js
+
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, *.faceu.mobi, *.*apps.com, api.shayujizhang.com, api1000.gdqeb.club
+hostname = %APPEND% api.m.jd.com, *.faceu.mobi, *.*apps.com, api.shayujizhang.com, api1000.gdqeb.club, api.gotokeep.com
