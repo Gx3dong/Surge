@@ -4,7 +4,7 @@
 
 [Header Rewrite]
 # > 香蕉视频会员
-https:\/\/.*\.*apps.com header-replace Cookie xxx_api_auth=6337396563633864643236616238336537633661343338646261393238363237
+https:\/\/.*\.*apps.com header-replace Cookie xxx_api_auth=3162386365306537353636306434346135343132323732666230356531653833
 
 
 [Script]
