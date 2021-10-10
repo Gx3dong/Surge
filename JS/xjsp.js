@@ -25,7 +25,7 @@ Surge4:
 直接复制下面内容新建本地模块
 
 [Header Rewrite]
-https:\/\/.*\.*apps\.com header-replace Cookie xxx_api_auth=6661366530633937373937653461323662393366663038636634356139353330
+https:\/\/.*\.*apps\.com header-replace Cookie xxx_api_auth=3637333161613233666630323063366161303730623161333863313531333864
 
 [Script]
 http-response https?:\/\/.*\.*apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
