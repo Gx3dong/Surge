@@ -14,7 +14,7 @@ QQ交流群：1077223830
 
 [rewrite_local]
 # > 会员
-https:\/\/.*\.*apps.com url request-header Cookie:.+ request-header Cookie: xxx_api_auth=3563353265336563333433303935653133333539353036363436396337343438
+https:\/\/.*\.*apps.com url request-header Cookie:.+ request-header Cookie: xxx_api_auth=3363356266346536366237646536646538333833383139313237333735613665
 # > 去广告
 https?:\/\/.*\.*apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
 
@@ -25,7 +25,7 @@ Surge4:
 直接复制下面内容新建本地模块
 
 [Header Rewrite]
-https:\/\/.*\.*apps\.com header-replace Cookie xxx_api_auth=3563353265336563333433303935653133333539353036363436396337343438
+https:\/\/.*\.*apps\.com header-replace Cookie xxx_api_auth=3363356266346536366237646536646538333833383139313237333735613665
 
 [Script]
 http-response https?:\/\/.*\.*apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
