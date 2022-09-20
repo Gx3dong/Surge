@@ -34,7 +34,10 @@ http-response https?:\/\/.+\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-b
 hostname = %APPEND% *.*apps.com
 
 */
+var body = $response.body;
+var url = $request.url;
 
+if (body) {
 var obj = JSON.parse($response.body);
 if ($request.url.indexOf("/ucp/index") != -1){
 obj.data.uinfo.down_daily_remainders = "999";
@@ -55,4 +58,7 @@ if ($request.url.indexOf("/reqplay/") != -1){
   };
 }
 
-$done({body: JSON.stringify(obj)});
+$done({body: JSON.stringify(obj)});  
+} else {
+  $done({})
+}
