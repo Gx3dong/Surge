@@ -2,7 +2,7 @@
 [rewrite_local]
 # > 91视频解锁会员
 ^https?:\/\/api\.jtshuzhiwa\.com\/m_user\/info url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/91SP.js
-^https?:\/\/.*\/m_sns\/(film|video|short_video)\/(film_detail|detail_list|apply_play) url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN:eyJhbGciOiJIUzUxMiIsImlhdCI6MTY2NTM5Mzk3OCwiZXhwIjoxNjgwOTQ1OTc4fQ.eyJpZCI6Mjk2MTMwfQ.Zl0bKnzmDxNvyd9xxuVPo-BZKbW6duvR-2x2k-dLMX-AbHbJQ8lGKobjq735DvsBYjcsCzUYzR0W4iprST1KMw
+^https?:\/\/.*\/m_sns\/(film|video|short_video)\/(film_detail|detail_list|apply_play) url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiIsImlhdCI6MTY2NTM5Mzk3OCwiZXhwIjoxNjgwOTQ1OTc4fQ.eyJpZCI6Mjk2MTMwfQ.Zl0bKnzmDxNvyd9xxuVPo-BZKbW6duvR-2x2k-dLMX-AbHbJQ8lGKobjq735DvsBYjcsCzUYzR0W4iprST1KMw
 ^https?:\/\/.*\/(common\/splash_config|m_user\/(check_phone|behavior_verification_code)) url reject-200
 
 [mitm] 
